@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Fixing wrong MPV window behaviour"
+date:   2020-06-27 20:20:35 +0300
+---
+## Description
+
+By default, MPV-player keeps window size fixed to video's aspect ratio. I found this to be very annoying and unusable.
+
+## Fix
+
+### Arch
+Create the MPV configuration file:
+```bash 
+cp -r /usr/share/doc/mpv/ ~/.config/
+```
+Add the next line into the file `~/.config/mpv/mpv.conf`:
+
+```
+keepaspect-window=no
+```
+Save and restart the player!
+
+## Tags
+The Google queries I tried to find the solution:
+1. mpv scaling aspect ratio to the window size
+2. mpv unlock window size from aspect ratio
+3. mpv resize window undependently from aspect ratio

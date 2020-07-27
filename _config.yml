@@ -1,0 +1,13 @@
+title: expwez's blog
+email: expwez@gmail.com
+description: >-
+  Just another blog.
+baseurl: ""
+url: ""
+twitter_username: expwez
+github_username:  expwez
+
+theme: minima
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
